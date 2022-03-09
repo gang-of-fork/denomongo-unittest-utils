@@ -20,10 +20,11 @@ export class MockCollection<T> extends Collection<T> {
         })
     }
 
-
+/*
     static countDocuments(filter?: Filter<any> | undefined, options?: CountOptions | undefined): Promise<number> {
         return MockCollection.instance.countDocuments(filter, options)
     }
+    */
 
     /**
      * 
