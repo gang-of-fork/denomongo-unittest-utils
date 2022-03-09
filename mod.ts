@@ -27,7 +27,7 @@ export class MockCollection<T> extends Collection<T> {
             delete: (filter: Filter<unknown>, options?: DeleteOptions | undefined): Promise<number> => MockCollection.instance.delete(filter, options),
             deleteMany: (filter: Filter<unknown>, options?: DeleteOptions | undefined): Promise<number> => MockCollection.instance.deleteMany(filter, options),
             deleteOne: (filter: Filter<unknown>, options?: DeleteOptions | undefined): Promise<number> => MockCollection.instance.deleteOne(filter, options),
-            distinct: (key: string, query?: Filter<unknown> | undefined, options?: DistinctOptions | undefined): Promise<any> => MockCollection.instance.distinct(key, options),
+            distinct: (key: string, query?: Filter<unknown> | undefined, options?: DistinctOptions | undefined): Promise<any> => MockCollection.instance.distinct(key, query, options),
             drop: (options?: DropOptions | undefined): Promise<void> => MockCollection.instance.drop(options),
             dropIndexes: (options: DropIndexOptions): Promise<{
                 ok: number;
