@@ -1,4 +1,4 @@
-import {MockCollection} from "./mod.ts"
+import {MockCollection} from "../../mod.ts"
 
 export default MockCollection.getMockWithProxy()
 

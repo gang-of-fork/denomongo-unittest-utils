@@ -1,7 +1,7 @@
-import Collection from "./testmock.ts"
-import { MockCollection } from "./mod.ts"
-import { Filter, CountOptions } from "./deps.ts"
-import { assertSpyCall, Spy, assertSpyCallAsync } from "https://deno.land/x/mock@0.13.0/mod.ts"
+import Collection from "./../mocks/testmock.ts"
+import { MockCollection } from "../../mod.ts"
+import { Filter, CountOptions } from "../../test_deps.ts"
+import { assertSpyCall, Spy, assertSpyCallAsync } from "../../test_deps.ts"
 
 Deno.test("demo", () => {
 MockCollection.initMock({

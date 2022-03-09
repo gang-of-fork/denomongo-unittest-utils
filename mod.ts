@@ -1,4 +1,4 @@
-import {AggregatePipeline, AggregateOptions, Collection, Filter, CountOptions} from "./deps.ts"
+import { AggregatePipeline, AggregateOptions, Collection, Filter, CountOptions } from "./deps.ts"
 import { spy } from "./deps.ts"
 
 
@@ -16,21 +16,10 @@ export class MockCollection<T> extends Collection<T> {
 
     static getMockWithProxy<T>() {
         return MockCollection.getMockCollection({
-            countDocuments: (filter?: Filter<unknown> | undefined, options?: CountOptions | undefined): Promise<number> => MockCollection.instance.countDocuments(filter, options)  
+            countDocuments: (filter?: Filter<unknown> | undefined, options?: CountOptions | undefined): Promise<number> => MockCollection.instance.countDocuments(filter, options)
         })
     }
 
-/*
-    static countDocuments(filter?: Filter<any> | undefined, options?: CountOptions | undefined): Promise<number> {
-        return MockCollection.instance.countDocuments(filter, options)
-    }
-    */
-
-    /**
-     * 
-     * @param additional additional properties that should be set explicitly
-     * @returns a spy-mock for mongo_deno Collections
-     */
     private static getMockCollection<T>(additional: Partial<Collection<T>>): Collection<T> {
         const props: Partial<Collection<T>> = {
             name: "",
@@ -77,7 +66,7 @@ export class MockCollection<T> extends Collection<T> {
     }
 
 
-    
+
 }
 
 export function _wrapSpy(func?: Function) {
