@@ -1,0 +1,1 @@
+run this test with ```deno test --import-map=./import_map.json exampletest.ts``` from this directory

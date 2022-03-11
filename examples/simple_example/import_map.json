@@ -1,0 +1,5 @@
+{
+    "imports":{
+        "./prodCollection.ts" : "https://deno.land/x/denomongo_unittest_utils/mod.ts"
+    }
+}
