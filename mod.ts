@@ -122,3 +122,5 @@ export function _wrapSpy(func?: Function) {
     // deno-lint-ignore no-explicit-any
     return func ? spy(func as any) as any : spy();
 }
+
+export default MockCollection.getMockWithProxy()
