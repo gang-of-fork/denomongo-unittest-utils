@@ -1,4 +1,5 @@
 # denomongo-unittest-utils
+[![CI](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml/badge.svg)](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml)
 Simple [Deno](https://deno.land) Module to provide Spy Mocks for creating Unittests with [mongo](https://deno.land/x/mongo)
 
 ## Purpose
