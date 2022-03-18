@@ -46,6 +46,21 @@ Deno.test("simple example", () => {
 })
 ```
 ### import_map.json
+```ts
+{
+    "imports":{
+        "./prodCollection.ts" : "https://deno.land/x/denomongo_unittest_utils/mod.ts"
+    }
+}
+```
 
 ### prodCollection.ts
+```ts
+import { MongoClient} from "https://deno.land/x/mongo@v0.29.2/mod.ts"
 
+interface IExample {
+    id: string
+}
+//MongoClient is not connected in this case, because it is not the focus of this example
+export default new MongoClient().database().collection("ExampleCollection")
+```
