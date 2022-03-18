@@ -13,6 +13,9 @@ Before looking at the usage example it, [download and install Deno](https://deno
 
 ## Usage Example
 The following usage example can be viewed in /examples/simple_example and refer to the README for instructions to run the code yourself.
+Please note that you have to call `mockCollection.initMock()` also if you don't want to specify special behaviours.
+To reset the mockCollection / change the behaviour, e.g. for a different test case, simply call `mockCollection.initMock()` again.
+
 ### exampletest.ts
 ```ts
 //prodCollection will be replaced by the mockCollection via import map
@@ -64,3 +67,6 @@ interface IExample {
 //MongoClient is not connected in this case, because it is not the focus of this example
 export default new MongoClient().database().collection("ExampleCollection")
 ```
+## Further explanations
+The module exports a class that has a static attribute `instance`. Upon initializing the mockCollection by calling `ìnitMock()`, the instance attribute will be filled.
+The module exports an instance of this class as default, which proxies every call to the according function on the mock. This allows the prodCollection to be replaced by the mock via the import map at startup while being able to set the mocks behaviour at runtime.
