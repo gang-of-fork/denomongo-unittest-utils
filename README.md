@@ -20,7 +20,7 @@ To reset the mockCollection / change the behaviour, e.g. for a different test ca
 ```ts
 //prodCollection will be replaced by the mockCollection via import map
 import prodCollection from "./prodCollection.ts";
-import { MockCollection } from "../../mod.ts"
+import { MockCollection } from "https://deno.land/x/denomongo_unittest_utils@VERSION/mod.ts"
 import { Filter, FindOptions } from "https://deno.land/x/mongo@v0.29.2/mod.ts"
 import {assertSpyCallAsync, Spy} from "https://deno.land/x/mock@0.13.0/mod.ts"
 
@@ -52,7 +52,7 @@ Deno.test("simple example", () => {
 ```ts
 {
     "imports":{
-        "./prodCollection.ts" : "https://deno.land/x/denomongo_unittest_utils/mod.ts"
+        "./prodCollection.ts" : "https://deno.land/x/denomongo_unittest_utils@VERSION/mod.ts"
     }
 }
 ```
