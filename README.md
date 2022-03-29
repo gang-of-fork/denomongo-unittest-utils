@@ -11,7 +11,9 @@ To use this module efficiently, you should outsource each mongo collection into 
 
 ## Installation
 This is a [Deno](https://deno.land) Module available at the [deno registry](https://deno.land/x/denomongo-unittest-utils). 
-Before looking at the usage example it, [download and install Deno](https://deno.land/#installation).
+Before looking at the usage example it, [download and install Deno](https://deno.land/#installation).  
+Run the unittests with `deno test`.  
+Analyze the code coverage with `deno test --coverage=./cov` and `deno coverage ./cov`
 
 ## Usage Example
 The following usage example can be viewed in /examples/simple_example and refer to the README for instructions to run the code yourself.
