@@ -1,7 +1,6 @@
 import Collection from "./../mocks/testmock.ts"
 import { MockCollection } from "../../mod.ts"
-import { Filter, CountOptions } from "../../test_deps.ts"
-import { Spy, assertSpyCallAsync, assertSpyCall, assertEquals } from "../../test_deps.ts"
+import { Filter, CountOptions,  Spy, assertSpyCallAsync, assertSpyCall, assertEquals  } from "../test_deps.ts"
 
 Deno.test("Test instantiation", () => {
     let mockProxy = MockCollection.getMockWithProxy();

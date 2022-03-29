@@ -1,5 +1,4 @@
-import { Collection, Filter, CountOptions, AggregatePipeline, AggregateOptions, DeleteOptions, DropOptions, DropIndexOptions, DistinctOptions, FindOptions, IndexOptions, InsertOptions, UpdateOptions, ConnectOptions, CollationOptions, CreateUserOptions, CreateIndexOptions, FindAndModifyOptions, InsertDocument, Document, Bson, FindCursor, AggregateCursor, ListIndexesCursor,  UpdateFilter} from "./deps.ts"
-import { spy } from "./deps.ts"
+import { spy, Collection, Filter, CountOptions, AggregatePipeline, AggregateOptions, DeleteOptions, DropOptions, DropIndexOptions, DistinctOptions, FindOptions, InsertOptions, UpdateOptions, CreateIndexOptions, FindAndModifyOptions, InsertDocument, Document, Bson, FindCursor, AggregateCursor, ListIndexesCursor,  UpdateFilter} from "./deps.ts"
 
 
 

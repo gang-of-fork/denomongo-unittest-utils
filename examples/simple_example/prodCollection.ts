@@ -1,7 +1,7 @@
-import { MongoClient} from "https://deno.land/x/mongo@v0.29.2/mod.ts"
+import { MongoClient} from "../example_deps.ts"
 
 interface IExample {
     id: string
 }
 
-export default new MongoClient().database().collection("ExampleCollection")
+export default new MongoClient().database().collection<IExample>("ExampleCollection")
