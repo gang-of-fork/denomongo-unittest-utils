@@ -10,7 +10,7 @@ The purpose of this module is to help with creating Unit-Tests for applications 
 To use this module efficiently, you should outsource each mongo collection into a seperate file and export the collection as default. By doing this, you can easily redirect the imports of this collection easily via an [import map](https://deno.land/manual/linking_to_external_code/import_maps) as shown in the usage example below.
 
 ## Installation
-This is a [Deno](https://deno.land) Module available at the [deno registry](https://deno.land/x/denomongo-unittest-utils). 
+This is a [Deno](https://deno.land) Module available at the [deno registry](https://deno.land/x/denomongo_unittest_utils). 
 Before looking at the usage example it, [download and install Deno](https://deno.land/#installation).  
 Run the unittests with `deno test`.  
 Analyze the code coverage with `deno test --coverage=./cov` and `deno coverage ./cov`
