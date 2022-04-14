@@ -4,7 +4,12 @@
 Simple [Deno](https://deno.land) Module to provide Spy Mocks for creating Unittests with [mongo](https://deno.land/x/mongo)
 
 ## Purpose
-The purpose of this module is to help with creating Unit-Tests for applications that use the [mongo driver for deno](https://deno.land/x/mongo). The module provides Spy Mocks for Colletions, meaning that their behaviour can be adjusted and function calls can be asserted with the [mock](https://deno.land/x/mock) package.
+The purpose of this module is to help with creating Unit-Tests for applications that use the [mongo driver for deno](https://deno.land/x/mongo).  
+The module provides Test Doubles for Mongo Collections. More specifically the Test Doubles can be configured as Mocks or Spies according to [Martin Fowler's definition](https://martinfowler.com/bliki/TestDouble.html). 
+The functionality of a spy object is provided out-of-the-box, the functionality of a mock object can be achieved by passing arguments to the `initMock()` function as shown below.
+
+
+meaning that their behaviour can be adjusted and function calls can be asserted with the [mock](https://deno.land/x/mock) package.
 
 ## Prerequisites
 To use this module efficiently, you should outsource each mongo collection into a seperate file and export the collection as default. By doing this, you can easily redirect the imports of this collection easily via an [import map](https://deno.land/manual/linking_to_external_code/import_maps) as shown in the usage example below.
