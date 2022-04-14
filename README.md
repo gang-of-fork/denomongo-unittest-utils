@@ -1,7 +1,10 @@
 # denomongo-unittest-utils
-[![CI](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml/badge.svg)](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml) 
-[![tag](https://shields.io/github/tag/lumaghg/denomongo-unittest-utils.svg)](https://github.com/lumaghg/denomongo-unittest-utils/releases)  
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)
+[![tag](https://shields.io/github/tag/lumaghg/denomongo-unittest-utils.svg)](https://github.com/lumaghg/denomongo-unittest-utils/releases)
+[![CI](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml/badge.svg)](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml)
+[![GitHub Issues](https://img.shields.io/github/issues/lumaghg/denomongo-unittest-utils.svg)](https://github.com/lumaghg/denomongo-unittest-utils/issues)  
 Simple [Deno](https://deno.land) Module to provide Spy Mocks for creating Unittests with [mongo](https://deno.land/x/mongo)
+
 
 ## Purpose
 The purpose of this module is to help with creating Unit-Tests for applications that use the [mongo driver for deno](https://deno.land/x/mongo).  
