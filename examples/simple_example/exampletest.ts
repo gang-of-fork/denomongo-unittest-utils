@@ -1,5 +1,6 @@
 //prodCollection will be replaced by the mockCollection via import map
 import prodCollection from "./prodCollection.ts";
+//replace ../../mod.ts with https://deno.land/x/denomongo_unittest_utils@VERSION/mod.ts
 import { MockCollection } from "../../mod.ts"
 import { Filter, FindOptions, assertSpyCallAsync, Spy } from "../example_deps.ts"
 
