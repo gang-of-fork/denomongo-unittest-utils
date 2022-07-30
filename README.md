@@ -3,7 +3,7 @@
 [![tag](https://shields.io/github/tag/lumaghg/denomongo-unittest-utils.svg)](https://github.com/lumaghg/denomongo-unittest-utils/releases)
 [![CI](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml/badge.svg)](https://github.com/lumaghg/denomongo-unittest-utils/actions/workflows/testing.yml)
 [![GitHub Issues](https://img.shields.io/github/issues/lumaghg/denomongo-unittest-utils.svg)](https://github.com/lumaghg/denomongo-unittest-utils/issues)  
-Simple [Deno](https://deno.land) Module to provide Spy Mocks for creating Unittests with [mongo](https://deno.land/x/mongo) published [here](https://deno.land/x/denomongo_unittest_utils@v0.5.1)
+Simple [Deno](https://deno.land) Module to provide Spy Mocks for creating Unittests with [mongo](https://deno.land/x/mongo) published [here](https://deno.land/x/denomongo_unittest_utils)
 
 
 
